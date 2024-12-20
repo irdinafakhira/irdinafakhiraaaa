@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+    <body>
+    <header>
+        <h1>irdina.fakhira</h1>
+        <p>Nur Irdina Fakhira Binti Aziz | Diploma Informfation Management | UiTM Machang</p>
+    </header>
+</body>
+
+
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About Me.html">About Me</a>
+        <a href="Family.html">Family</a>
+        <a href="Education.html">Education</a>
+        <a href="Skills.html">Skills</a>
+        <a href="Experience.html">Experience</a>
+        <a href="Contact Us.html">Contact Me</a>
+
+    </nav>
+
+
+    <section class="homepage" style="background-color:  #6e3d45cb;">
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 8</div>
+          <img src="gambar 24.jpg" style="width:100%">
+          <div class="text">" Welcome To My Website"</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 8</div>
+          <img src="gambar 25.jpg" style="width:100%">
+          <div class="text">" Foodie "</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 8</div>
+            <img src="gambar 32.jpg" style="width:100%">
+            <div class="text">" Coffee "</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 8</div>
+            <img src="gambar 30.jpg" style="width:100%">
+            <div class="text">" Family "</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 8</div>
+            <img src="gambar 31.jpg" style="width:100%">
+            <div class="text">" Friends (Trio) "</div>
+          </div>
+
+          
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 8</div>
+            <img src="gambar 33.jpg" style="width:100%">
+            <div class="text">" Internship Partner "</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 8</div>
+            <img src="gambar 34.jpg" style="width:100%">
+            <div class="text">" Classmate "</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 8</div>
+            <img src="gambar 35.jpg" style="width:100%">
+            <div class="text">" No Day Without Coffee "</div>
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+    </body>
+    </html> 
+    
+    </section>
+</div>
+
+
+    
+        <section class="homepage">
+            <div class="homepage-container">
+                <img src="gambar 16.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="text">My Hobby</div>
+                </div>
+            </div>
+    
+            <div class="homepage-container">
+                <img src="gambar 22.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="text">My Passion</div>
+                </div>
+            </div>
+
+            <video autoplay muted loop id="myVideo" width="800" height="400" controls>
+                <source src="video 3.MP4" type="video/mp4">
+              </video>
+              
+        </section>
+    
+    </body>
+            
+    <section class="homepage">
+    <main class="profile">
+        <div class="profile-container">
+            <!-- Left Side (Details) -->
+            <div class="profile-details">
+                <p><strong>Who is me ?</strong></p>
+                <p>Hello and Hi !!</p>
+                <p>Welcome to my website;)<p>
+                <p>My name is Nur Irdina Fakhira binti Aziz, I am a final year student in the fifth semester, studying Information Management Diploma majoring in record management, library management, and systems management from University Technology MARA (UiTM), Machang Kelantan.</p>      
+                <p id="short-content"><strong>Want to know me more ?? Click here !</strong></p>
+                <a href="About Me.html" class="go-to-page-button">Click More</a>
+            
+           
+            <audio  width="400" controls autoplay border="2">
+                <source src="video 4.mp4" type="audio/mpeg">
+                </audio>
+           
+            </div>
+
+                
+            <!-- Right Side (Image) -->
+            <div class="profile-image">
+                <img src="media 6.jpg" alt="Profile Picture" class="center-image" height="auto" width="400" />
+            </div>
+            </main>
+
+            
+
+        </section>
+    </div>
+
+
+    
+
+<footer>
+            <h1>irdina.fakhira</h1>
+
+            <div class="social-icons" style="text-align: center; margin-top: 20px;">
+                
+                <a href="https://wa.me/01119301755" target="_blank" >
+                    <img src="whatsapp icon.png" alt="Whatsapp">
+                </a>
+
+                <a href="https://www.instagram.com/irdina.fakhira" target="_blank" >
+                    <img src="instagram icon 2.jpg" alt="Instagram">
+                </a>
+
+                <a href="https://www.tiktok.com/@irdina.fakhiraa" target="_blank">
+                    <img src="tiktok icon.png" alt="TikTok">
+                </a>
+            </div>
+
+    <p>&copy; 2024 Nur Irdina Fakhira. All Rights Reserved.</p>
+</footer>
+
+</html>
+       
+
+   
